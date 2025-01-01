@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: red;  /* ボタンの背景色を赤に設定 */
+            color: white;           /* ボタンの文字色を白に設定 */
+            border: none;           /* ボタンの枠線を消去 */
+            border-radius: 5px;     /* ボタンの角を丸くする */
+        }
+        button:hover {
+            background-color: darkred;  /* ボタンにカーソルを乗せたときの色を変更 */
+        }
+
+        #snake-image {
+            margin-top: 30px;
+            width: 200px; /* 画像の幅を200pxに設定 */
+            height: auto; /* 高さは自動で調整 */
+        }
+    </style>
+</head>
+<body>
+    <h1>おみくじ</h1>
+    <button onclick="drawOmikuji()">運試し！</button>
+    <div id="result"></div>
+
+    <!-- 画像の追加 -->
+    <img id="snake-image" src="https://niceillust.com/wp-content/uploads/2020/12/E-eto_daruma_01_006-768x814.png" alt="蛇の画像">
+
+    <script src="omikuji.js"></script>
+</body>
+</html>
